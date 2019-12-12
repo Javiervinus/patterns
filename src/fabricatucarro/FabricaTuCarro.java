@@ -16,13 +16,17 @@ public class FabricaTuCarro {
      */
     public static void main(String[] args) {
         CarroDirector c1= new CarroDirector(new ChevroletSailBuilder());
-        c1.construirComputador();
+        c1.construirCarro();
         Carro carroSail = c1.getCarro();
         CarroDirector c2= new CarroDirector(new ChevroletSparkBuilder());
-        c2.construirComputador();
+        c2.construirCarro();
         Carro carroSpark = c2.getCarro();
         System.out.println(carroSail);
         System.out.println(carroSpark);
+        CarroDirector c3= new CarroDirector(new ChevroletCamaro());
+        c3.construirCarro();
+        Carro carroCamaro=c3.getCarro();
+        System.out.println(carroCamaro);
     }
     
 }

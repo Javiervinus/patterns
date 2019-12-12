@@ -16,7 +16,7 @@ public class CarroDirector {
         this.builder=builder;
     }
     
-    public void construirComputador(){
+    public void construirCarro(){
         builder.definirCarro();
         builder.insertarAlmacenamiento();
         builder.insertarMotor();
